@@ -1,0 +1,16 @@
+--- errno-0.2.4/Cargo.toml	1970-01-01T01:00:00+01:00
++++ errno-0.2.4/Cargo.toml	2018-11-02T18:45:02.098347+01:00
+@@ -19,13 +19,8 @@
+ categories = ["os"]
+ license = "MIT/Apache-2.0"
+ repository = "https://github.com/lfairy/rust-errno"
+-[target."cfg(target_os=\"dragonfly\")".dependencies.errno-dragonfly]
+-version = "0.1.1"
+ [target."cfg(unix)".dependencies.libc]
+ version = "0.2"
+-[target."cfg(windows)".dependencies.winapi]
+-version = "0.3"
+-features = ["errhandlingapi", "minwindef", "ntdef", "winbase"]
+ [badges.appveyor]
+ repository = "lfairy/rust-errno"
+ 
